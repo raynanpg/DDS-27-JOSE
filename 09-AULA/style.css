@@ -1,0 +1,36 @@
+body {
+  background-color: rgb(92, 42, 207);
+  /* alinhamento do texto */
+  text-align: center;
+}
+
+/* ESTILIZAÇÃO VIA TAG */
+ul{
+    background-color: rgba(113, 91, 211, 0);
+    list-style: none;
+}
+li{
+    /* COR DE FUNDO*/
+    background-color: black;
+    /* COR DO TEXTO*/
+    color: white;
+    /* largura do elemento */
+    width:100px ;
+    /* altura do elemento */
+    height:50px ;
+    /* tamanho da fonte */
+    font-size: 20px;
+
+    /* espaço do elemento para fora */
+    margin-left:auto;
+    margin-right:auto;
+}
+
+h2{
+    color: aqua;
+    font-size: 25px;
+    /* estilo do texto */
+    font-style: oblique;
+    /* familia da fonte */
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
