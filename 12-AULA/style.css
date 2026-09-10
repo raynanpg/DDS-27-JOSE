@@ -1,0 +1,162 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* IMPORTAÇÃO DE FONTES DO GOOGLE*/
+/* VIA URL */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+body{
+    background-color: blanchedalmond;
+    margin: 20px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* USANDO FONTE VIA URL */
+h1{
+    font-weight: 200;
+}
+
+h2{
+    font-weight: 600;
+}
+
+/* ESTILIZAÇÃO DE VÁRIOS ELEMENTOS AO MESMO TEMPO */
+
+h1,h2{
+    font-family: "Roboto", sans-serif;
+    color: blue;
+}
+
+/* ESTILIZAÇÃO VIA CLASS */
+.bloco{
+    background-color: aliceblue;
+    border: 2px solid red;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* IMPORTAR FONTES DO PROJETO */
+
+@font-face {
+    font-family: "fonte";
+    src: url(./fonts/fonte.ttf);
+}
+
+/* USANDO A FONTE DO PROJETO */
+p{
+    font-family: "fonte";
+    font-size: 15px;
+    color: blueviolet;
+}
+
+/* PSEUDO CLASSES */
+a{
+    color: blue;
+}
+
+/* LINKS NÃO VISITADOS */
+a:link{
+    color: aqua;
+}
+
+/* LINKS JÁ VISITADOS */
+a:visited{
+    color: chartreuse;
+}
+
+/* QUANDO PASSA O CURSOR EM CIMA */
+a:hover{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* LINK QUE ESTÁ ATIVO, QUE ESTÁ CLICADO */
+a:active{
+    color: coral;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: red;
+    color: aliceblue;
+    padding: 5px;
+}
+
+/* BOTÃO QUE ESTÁ ATIVO, QUE ESTÁ CLICANDO */
+button:active{
+    transform: scale(0.3,5);
+    transition: 3s;
+    transform: rotate(50deg);
+}
+
+/* INPUT QUANDO ESTÁ SELECIONADO */
+input:focus{
+    outline: none;
+    border: 2px solid #FFDD00;
+    background-color: antiquewhite;
+}
+
+/* INPUT QUANDO É OBRIGATÓRIO */
+input:required{
+    border: 2px solid red;
+}
+
+/* QUANDO O PREENCHIMENTO É VÁLIDO */
+input:valid{
+    background-color: greenyellow;
+}
+
+/* QUANDO O PREENCHIMENTO NÃO É VALIDO */
+input:invalid{
+    background-color: brown;
+}
+/* QUANDO O CHECKBOX ESTÁ MARCADO */
+input:checked{
+    accent-color: green;
+}
+
+/* ESTILIZA OS INPUTS DESABILITADOS */
+input:disabled{
+    background-color: #e5e7eb;
+    color: #6b7280;
+}
+
+/* SELECIONA O PRIMEIRO FILHO */
+.lista-exemplo li:first-child{
+    font-weight: bold;
+    color: green;
+}
+
+/* SELECIONA O SEGUNDO FILHO */
+.lista-exemplo li:last-child{
+    font-weight: bold;
+    height: 30px;
+    background-image: linear-gradient(red, yellow, green);
+}
+
+/* SELECIONA O SEGUNDO FILHO */
+.lista-exemplo li:nth-child(3){
+    background-color: gold;
+}
+
+/* SELECIONA ESPAÇOS SEM CONTEUDO */
+.caixa-vazia:empty{
+    width: 100px;
+    height: 50px;
+    background-color: black;
+}
+/* SELECIONA A PRIMEIRA LETRA DE UM TEXTO */
+.texto-especial::first-letter{
+    color: red;
+    font-size: 50px;
+}
+/* SELECIONA A PRIMEIRA LINHA DE UM TEXTO */
+.texto-especial::first-line{
+    color: gold;
+    font-size: 20px;
+}
+
