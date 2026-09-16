@@ -1,160 +1,280 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 /* VARIÁVEIS */
-:root{
-    --font-main: "Segoe UI", sans-serif;
-    --color-primary: red;
-    --color-text: black;
-    --color-bg-page: rgb(147, 54, 235);
-    --color-bg-box: rgb(45, 58, 236);
-    --color-white: white;
-    --color-gray: gray;
+:root {
+  --font-main: "Segoe UI", sans-serif;
+  --color-primary: rgba(247, 71, 71, 0.884);
+  --color-text: black;
+  --color-bg-page: rgb(147, 54, 235);
+  --color-bg-box: rgba(45, 58, 236, 0.199);
+  --color-white: rgb(255, 250, 250);
+  --color-gray: gray;
 
-    /* ESTADOS E EXEMPLOS */
-    --blue-bg: #dbeafe;
-    --blue-border: #1799f0;
-    --green-bg: #dcfce7;
-    --green-border: #16a34a;
-    --yellow-bg: #fef3c7;
-    --yellow-border: #d97706;
+  /* ESTADOS E EXEMPLOS */
+  --blue-bg: #dbeafe;
+  --blue-border: #1799f0;
+  --green-bg: #dcfce7;
+  --green-border: #16a34a;
+  --yellow-bg: #fef3c7;
+  --yellow-border: #d97706;
 
-    /* COMPARAÇÃO */
-    --comparacao-block-bg: lightblue;
-    --comparacao-inline-bg: lightgreen;
-    --comparacao-inline-block-bg: #fde68a;
-    --observacao-bg: rgb(224, 219, 219);
+  /* COMPARAÇÃO */
+  --comparacao-block-bg: lightblue;
+  --comparacao-inline-bg: lightgreen;
+  --comparacao-inline-block-bg: #fde68a;
+  --observacao-bg: rgb(224, 219, 219);
 
-    /* MEDIDAS */
-    --radius: 10px;
-    --gap: 10px;
+  /* MEDIDAS */
+  --radius: 10px;
+  --gap: 10px;
 }
 
 /* ESTILO GERAL */
-body{
-    font-family: var(--font-main);
-    background-color: var(--color-bg-page);
-    color: var(--color-text);
-    margin: 20px;
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg-page);
+  color: var(--color-text);
+  margin: 20px;
 }
 
-h1,h2{
-    color: var(--color-primary);
-    text-align: center;
+h1,
+h2 {
+  color: var(--color-primary);
+  text-align: center;
 }
 
-h1{
-    font-size: 32px;
+h1 {
+  font-size: 32px;
 }
 
-h2{
-    font-size: 24px;
+h2 {
+  font-size: 24px;
 }
 
-h3{
-    margin-top: 25px;
+h3 {
+  margin-top: 25px;
 }
 
-p{
-    line-height: 1.5;
+p {
+  line-height: 1.5;
 }
 
-.bloco{
-    background-color: var(--color-white);
-    border: 2px solid var(--color-gray);
-    border-radius: var(--radius);
-    padding: 20px;
-    margin-bottom: 10px;
+.bloco {
+  background-color: var(--color-white);
+  border: 2px solid var(--color-gray);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 10px;
 }
 
 /* COMPARÇÃO */
-.comparacao{
-    border: 2px dashed var(--color-gray);
-    padding: 20px;
-    margin-bottom: 10px;
+.comparacao {
+  border: 2px dashed var(--color-gray);
+  padding: 20px;
+  margin-bottom: 10px;
 }
 
 /* OBSERVAÇÃO */
-.observacao{
-    background-color: var(--observacao-bg);
-    border-left: 5px solid var(--color-primary);
-    padding: 12px;
+.observacao {
+  background-color: var(--observacao-bg);
+  border-left: 5px solid var(--color-primary);
+  padding: 12px;
 }
 
 /*DISPLAY BLOCK */
-.exemplo-block div{
-    display: block;
-    background-color: var(--blue-bg);
-    border: 2px solid var(--blue-border);
-    padding: 15px;
-    margin-bottom: 8px;
+.exemplo-block div {
+  display: block;
+  background-color: var(--blue-bg);
+  border: 2px solid var(--blue-border);
+  padding: 15px;
+  margin-bottom: 8px;
 }
 
-.comparacao.block div{
-    display: block;
-    background-color: var(--comparacao-block-bg);
-    padding: 10px;
-    margin-bottom: 5px;
+.comparacao.block div {
+  display: block;
+  background-color: var(--comparacao-block-bg);
+  padding: 10px;
+  margin-bottom: 5px;
 }
 
 /* DISPLAY INLINE */
-.exemplo-inline span{
-    display: inline;
-    background-color: var(--green-bg);
-    border: 2px solid var(--green-border);
-    padding: 1px;
-    margin-left: 50px;
+.exemplo-inline span {
+  display: inline;
+  background-color: var(--green-bg);
+  border: 2px solid var(--green-border);
+  padding: 1px;
+  margin-left: 50px;
 }
 
-.comparacao.inline span{
-    display: inline;
-    background-color: var(--comparacao-inline-bg);
-    padding: 10px;
+.comparacao.inline span {
+  display: inline;
+  background-color: var(--comparacao-inline-bg);
+  padding: 10px;
 }
 
 /* DISPLAY INLINE-BLOCK */
-.exemplo-inline-block div{
-    display: inline-block;
-    background-color: var(--yellow-bg);
-    border: 2px solid var(--yellow-border);
-    padding: 10px;
-    width: 100px;
-    height: 20px;
-    margin-right: 10px;
-    margin-bottom: 5px;
-    text-align: center;
-    line-height: 20px;
+.exemplo-inline-block div {
+  display: inline-block;
+  background-color: var(--yellow-bg);
+  border: 2px solid var(--yellow-border);
+  padding: 10px;
+  width: 100px;
+  height: 20px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+  line-height: 20px;
 }
 
-.comparacao.inline-block div{
-    display: inline-block;
-    width: 100px;
-    height: 60px;
-    background-color: var(--comparacao-inline-block-bg);
-    padding: 25px;
-    margin-right: 10px;
-    text-align: center;
-    margin-bottom: 5px;
+.comparacao.inline-block div {
+  display: inline-block;
+  width: 100px;
+  height: 60px;
+  background-color: var(--comparacao-inline-block-bg);
+  padding: 25px;
+  margin-right: 10px;
+  text-align: center;
+  margin-bottom: 5px;
 }
 
 /* DISPLAY NONE */
-.none-exemplo{
-    display: flex;
-    gap: var(--gap);
-    background-color: var(--color-bg-box);
-    padding: 20px;
+.none-exemplo {
+  display: flex;
+  gap: var(--gap);
+  background-color: var(--color-bg-box);
+  padding: 20px;
 }
 
-.none-exemplo div{
-    flex: 1;
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    padding: 25px;
-    text-align: center;
+.none-exemplo div {
+  flex: 1;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 25px;
+  text-align: center;
 }
 
-.none-exemplo .elemento-oculto{
-    display: none;
+.none-exemplo .elemento-oculto {
+  display: none;
+}
+
+/* DISPLAY FLEX */
+.exemplo-flex {
+  display: flex;
+  background-color: var(--color-bg-box);
+  padding: 20px;
+  gap: var(--gap);
+}
+
+.exemplo-flex div {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 25px;
+  width: 90px;
+  flex: 1;
+  text-align: center;
+}
+
+/* FLEX DIRECTION */
+.flex-direction-row {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap);
+  background-color: var(--color-bg-box);
+  padding: 15px;
+}
+
+.flex-direction-row div,
+.flex-direction-column div {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 15px;
+  text-align: center;
+}
+
+.flex-direction-column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  background-color: var(--color-bg-box);
+  padding: 15px;
+}
+
+/* JUSTIFY CONTENT */
+/* CAIXAS INTERNAS OU OS FILHOS */
+.justify-start div,
+.justify-center div,
+.justify-between div {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 15px 25px;
+}
+/* OS PAIS OU MÃE CASO VC TENHA PROBLEMA COM O PAI */
+.justify-start,
+.justify-center,
+.justify-between {
+  display: flex;
+  background-color: var(--color-bg-box);
+  padding: 15px;
+  margin-bottom: 15px;
+  gap: var(--gap);
+}
+
+/* ALINHADO AO COMEÇO HORIZONTALMENTE */
+.justify-start {
+  justify-content: start; /* start - esquerda */
+  justify-content: end; /* end - direita */
+}
+
+/* ALINHAR OS ITENS AO CENTRO HORIZONTALMENTE */
+.justify-center {
+  justify-content: center;
+}
+
+/* DÁ UM ESPAÇO ENTRE OS ELEMENTOS HORIZONTALMENTE */
+.justify-between {
+  justify-content: space-between; /* between - entre */
+  justify-content: space-around; /* around - em volta */
+}
+
+/* ALIGN-ITENS */
+.align-center {
+  display: flex;
+  height: 180px;
+  background-color: var(--color-bg-box);
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.align-center div {
+  background-color: green;
+  color: var(--color-white);
+  padding: 15px;
+}
+
+.align-center .grande {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+/* GAP */
+.gap-exemplo {
+  display: flex;
+  gap: 30px;
+  background-color: var(--color-bg-box);
+  padding: 20px;
+}
+
+.gap-exemplo div {
+  width: 70px;
+  height: 70px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
