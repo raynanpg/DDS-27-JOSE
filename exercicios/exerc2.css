@@ -1,0 +1,41 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: wheat;
+}
+
+img{
+    display: block;
+}
+
+.inicio{
+    background-color: black;
+    position: sticky;
+}
+
+.navegacao{
+    display: flex;
+    min-height: 85px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a{
+    color: white;
+    padding: 10px 15px;
+    transition: 1.2;
+}
+
+.menu a:hover{
+    color: rgb(7, 177, 245);
+    transition: 0.5;
+}
