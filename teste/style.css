@@ -1,0 +1,33 @@
+/* Container principal usando Grid */
+.grid-pai {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Divide o container em 2 colunas iguais */
+  gap: 20px; /* Espaçamento entre os blocos */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #3498db; /* Cor de fundo azul da página */
+}
+
+/* Estilização geral dos blocos internos */
+.bloco {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Faz o bloco de Apoio ocupar as duas colunas inteiras na parte inferior */
+.apoio-bloco {
+  grid-column: 1 / -1;
+}
+
+/* Responsividade para telas menores (opcional, mas recomendado) */
+@media (max-width: 768px) {
+  .grid-pai {
+    grid-template-columns: 1fr; /* Em telas menores, vira uma única coluna */
+  }
+  .apoio-bloco {
+    grid-column: 1;
+  }
+}
